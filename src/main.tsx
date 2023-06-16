@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, ScrollRestoration, Outlet } from 'react-router-dom'
 
+import './styles/import.css'
 import GlobalStyle from './styles/GlobalStyle'
 
 import { getFirebaseApp, initializeAppCheck } from './libs/FirebaseApp'
