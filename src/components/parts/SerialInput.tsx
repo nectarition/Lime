@@ -12,10 +12,17 @@ interface Props {
 const SerialInput: React.FC<Props> = (props) => {
   return (
     <>
-      <p>シリアルコードを入力してください</p>
+      <h1>シリアルコードを入力してください</h1>
+      <p>
+        シリアルコードには有効期限があります。有効期限外のコードが入力された場合、コードが正しくても「シリアルコードが間違っています」と表示される場合がございますのでご注意ください。
+      </p>
       <FormSection>
         <FormItem>
-          <FormInput size={32} value={props.serial} onChange={e => props.setSerial(e.target.value)} />
+          <FormInput
+            size={32}
+            value={props.serial}
+            onChange={e => props.setSerial(e.target.value)}
+            onKeyDown={e => e.key === 'Enter' && props.handleFindSerial()} />
         </FormItem>
       </FormSection>
       <FormSection>
