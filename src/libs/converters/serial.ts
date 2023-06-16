@@ -1,5 +1,5 @@
 import { LimeSerial } from '@types'
-import { FirestoreDataConverter, type DocumentData, getDoc } from 'firebase/firestore'
+import { FirestoreDataConverter, type DocumentData } from 'firebase/firestore'
 
 const serialConveter: FirestoreDataConverter<LimeSerial> = {
   toFirestore: (): DocumentData => ({}),
