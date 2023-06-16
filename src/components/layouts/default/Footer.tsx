@@ -2,7 +2,14 @@ import styled from 'styled-components'
 
 const Footer: React.FC = () => (
   <Container>
-    &copy; 2023 Nectarition
+    <Logo>
+      <a href="https://nectarition.jp">
+        <LogoImage src="https://nectarition.jp/logo/common.png" />
+      </a>
+    </Logo>
+    <Copyright>
+      &copy; 2023 Nectarition
+    </Copyright>
   </Container>
 )
 
@@ -17,4 +24,15 @@ const Container = styled.footer`
     padding: 10px;
     padding-bottom: calc(10px + env(safe-area-inset-bottom));
   }
+`
+
+const Logo = styled.section`
+  margin-bottom: 10px;
+`
+const LogoImage = styled.img`
+  height: 16px;
+`
+
+const Copyright = styled.section`
+  color: #808080;
 `
