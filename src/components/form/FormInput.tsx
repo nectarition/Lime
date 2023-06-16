@@ -9,6 +9,7 @@ const FormInput = styled.input<{ size?: number }>`
   text-align: center;
   
   border: 2px solid #808080;
+  border-radius: 0;
   outline: none;
 
   &:focus {

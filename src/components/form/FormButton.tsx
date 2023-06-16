@@ -5,7 +5,10 @@ const FormButton = styled.button<{ color?: 'default' }>`
   padding: 10px;
   border: none;
   cursor: pointer;
+
   font-weight: bold;
+  font-size: 16px;
+  color: #000000;
 
   background-color: ${props => props.color === 'default'
     ? `#e0e0e0`

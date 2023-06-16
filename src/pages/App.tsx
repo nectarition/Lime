@@ -18,7 +18,10 @@ const App: React.FC = () => {
 
   const handleFindSerial: () => void =
     () => {
-      if (!serial) alert('シリアルコードを入力してください')
+      if (!serial) {
+        alert('シリアルコードを入力してください')
+        return
+      }
 
       findSerialAsync(serial)
         .then(serialData => {
