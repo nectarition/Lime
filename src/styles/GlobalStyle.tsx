@@ -34,7 +34,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .code {
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Noto Sans Mono', monospace;
   }
 `
 
