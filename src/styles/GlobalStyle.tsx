@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
   a:link, a:visited {
     color: var(--secondary-color);
   }
+
+  .code {
+    font-family: 'IBM Plex Mono', monospace;
+  }
 `
 
 export default GlobalStyle

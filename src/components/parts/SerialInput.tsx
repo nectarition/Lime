@@ -20,6 +20,7 @@ const SerialInput: React.FC<Props> = (props) => {
       <FormSection>
         <FormItem>
           <FormInput
+            className='code'
             size={32}
             value={props.serial}
             onChange={e => props.setSerial(e.target.value)}

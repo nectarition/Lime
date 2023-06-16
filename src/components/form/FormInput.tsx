@@ -5,7 +5,6 @@ const FormInput = styled.input<{ size?: number }>`
   padding: 5px;
   font-size: ${props => props.size ?? 16}px;
 
-  font-family: 'Consolas', monospace;
   text-align: center;
   
   border: 2px solid #808080;
