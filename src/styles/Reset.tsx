@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { css } from 'styled-components'
 
-const ResetStyle = createGlobalStyle`
+const resetStyle = css`
   html, body {
     margin: 0;
     padding: 0;
@@ -21,4 +21,4 @@ const ResetStyle = createGlobalStyle`
   }
 `
 
-export default ResetStyle
+export default resetStyle
